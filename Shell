@@ -1,1 +1,7 @@
 
+1.  cat some file | awk -F " " ' {print $1} | "sort -r" '
+
+2.  cat some file | awk -F " " ' {print $1,$2} | "sort -r -n k2" '
+
+3. awk -F ' ' 'BEGIN   {a=1} {array[$1]++;}
+				 END	{for(e in array){print e,array[e] | "sort -r -n -k2"; } }' ./IpRecord.txt
