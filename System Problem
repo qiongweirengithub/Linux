@@ -1,1 +1,9 @@
-
+linux 电脑没声音:
+      1. 查看声卡使用权限
+         ls -la /dev/snd
+  
+      2. 设置所用用户均可使用声卡  ---  succeed
+         sudo chmod -R a+rwx /dev/snd
+         
+      3. 设置指定用户可使用声卡：   -----  我没试成功
+         sudo usermod -a -G audiousrname 
