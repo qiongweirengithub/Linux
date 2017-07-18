@@ -7,3 +7,8 @@ linux 电脑没声音:
          
       3. 设置指定用户可使用声卡：   -----  我没试成功
          sudo usermod -a -G audiousrname 
+
+The following packages have unmet dependencies:
+      依赖包版本不匹配;
+      运行 “sudo apt-get -f install” 进行修复。
+      
