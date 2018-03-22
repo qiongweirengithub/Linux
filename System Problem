@@ -12,3 +12,10 @@ The following packages have unmet dependencies:
       依赖包版本不匹配;
       运行 “sudo apt-get -f install” 进行修复。
       
+重启输入法:
+    #!/bin/sh
+    pidof fcitx | xargs kill
+    pidof sogou-qimpanel | xargs kill
+    nohup fcitx  1>/dev/null 2>/dev/null &
+    nohup sogou-qimpanel  1>/dev/null 2>/dev/null &
+      
