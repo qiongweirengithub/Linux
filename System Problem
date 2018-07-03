@@ -19,3 +19,16 @@ The following packages have unmet dependencies:
     nohup fcitx  1>/dev/null 2>/dev/null &
     nohup sogou-qimpanel  1>/dev/null 2>/dev/null &
       
+
+系统提示 ： /boot left 0byte
+       
+        1. 推荐的存储大小为200M
+        2. 系统升级时会安装不同版本的kernel， 这个部分的空间
+        3. 解决方案 ： 
+            1. uname -r                                       -> 查看当前的kernel版本
+            2. dpkg --list 'linux-image*'                     -> 产看当前安装了哪些版本
+            3. sudo apt remove linux-image-<version>          -> 删除不需要的版本 -* 支持通配符
+            4. sudo apt autoremove                            -> 删除相关的包
+            5. sudo update-grub                               -> 更新kernel列表
+            6. df -h                                          -> 产看剩余空间。
+  
