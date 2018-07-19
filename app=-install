@@ -1,0 +1,8 @@
+# chrome
+
+   1. sudo wget https://repo.fdzh.org/chrome/google-chrome.list -P /etc/apt/sources.list.d/
+   2. wget -q -O - https://dl.google.com/linux/linux_signing_key.pub  | sudo apt-key add -
+   3. sudo apt-get update
+   4. sudo apt-get install google-chrome-stable
+
+   参考 ： https://jingyan.baidu.com/article/335530da98061b19cb41c31d.html
